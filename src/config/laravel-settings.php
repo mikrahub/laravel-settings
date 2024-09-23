@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'storage' => 'mysql',
-    'default_tenant_id' => 0,
-    'cache_enabled' => false,
-    'cache_duration' => 3600, // seconds
+    'storage' => env('SETTINGS_STORAGE', 'mysql'),
+    'default_tenant_id' => env('SETTINGS_DEFAULT_TENANT_ID', 0),
+    'cache_enabled' => env('SETTINGS_CACHE_ENABLED', false),
+    'cache_duration' => env('SETTINGS_CACHE_DURATION', 3600), // seconds
 ];

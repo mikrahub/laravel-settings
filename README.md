@@ -24,7 +24,18 @@ Run the following command to install the package:
 composer require mikrahub/laravel-settings
 ```
 
-### Step 2:  Run migrations
+### Step 2: Configure the package
+Add the following to your `.env` file:
+
+```env
+SETTINGS_STORAGE=mysql
+SETTINGS_DEFAULT_TENANT_ID=0
+SETTINGS_CACHE_ENABLED=false
+SETTINGS_CACHE_DURATION=3600
+```
+
+
+### Step 3:  Run migrations
 
 ```bash
 php artisan migrate
