@@ -1,0 +1,28 @@
+{
+    "name": "mikrahub/laravel-settings",
+    "description": "description",
+    "minimum-stability": "dev",
+    "license": "proprietary",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Mikrahub\\LaravelSettings\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ardidenko",
+            "email": "mikrafizik@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mikrahub\\LaravelSettings\\LaravelSettingsProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.2"
+    }
+}
